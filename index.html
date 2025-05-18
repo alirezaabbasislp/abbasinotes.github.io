@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اپلیکیشن یادداشت</title>
+    <!-- Quill stylesheet -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>اپلیکیشن یادداشت حرفه‌ای من</h1>
+    </header>
+    <h1>اپلیکیشن یادداشت من</h1>
+    <div id="app-container">
+        <div id="note-editor">
+            <input type="text" id="note-title-input" placeholder="عنوان یادداشت">
+            <div id="note-content-editor"></div>
+            <button id="save-note-button">ذخیره یادداشت</button>
+            <button id="new-note-button">یادداشت جدید</button>
+        </div>
+        <div id="notes-list-container">
+            <h2>لیست یادداشت‌ها</h2>
+            <input type="text" id="search-input" placeholder="جستجو در یادداشت‌ها...">
+            <ul id="notes-list"></ul>
+        </div>
+    </div>
+    <footer>
+        <p>© ۲۰۲۴ - تمام حقوق محفوظ است.</p>
+    </footer>
+    <!-- Quill JS -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
